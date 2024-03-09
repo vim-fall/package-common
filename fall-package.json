@@ -37,7 +37,7 @@
     },
     "source": {
       "file": {
-        "uri": "./sources/file.ts",
+        "url": "./sources/file.ts",
         "options": {
           "excludes": [
             "/.git/",
