@@ -27,7 +27,7 @@
     },
     "processor": {
       "lexical_sorter": {
-        "url": "processors/lexical_sorter.ts",
+        "url": "./processors/lexical_sorter.ts",
         "variants": {
           "reverse": {
             "reverse": true
