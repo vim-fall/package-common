@@ -1,0 +1,53 @@
+{
+  "extension": {
+    "action": {
+      "quickfix": {
+        "url": "./actions/quickfix.ts",
+        "variants": {
+          "add": {
+            "action": "a"
+          },
+          "replace": {
+            "action": "r"
+          },
+          "processed": {
+            "target": "selected-or-processed"
+          },
+          "processed:add": {
+            "target": "selected-or-processed",
+            "action": "a"
+          },
+          "processed:replace": {
+            "target": "selected-or-processed",
+            "action": "r"
+          }
+        }
+      }
+    },
+    "processor": {
+      "lexical_sorter": {
+        "url": "processors/lexical_sorter.ts",
+        "variants": {
+          "reverse": {
+            "reverse": true
+          }
+        }
+      }
+    },
+    "source": {
+      "file": {
+        "uri": "./sources/file.ts",
+        "options": {
+          "excludes": [
+            "/.git/",
+            "/node_modules/",
+            "/target/",
+            "/.DS_Store",
+            "/Desktop.ini",
+            "/Thumbs.db"
+          ]
+        }
+      }
+    }
+  }
+}
