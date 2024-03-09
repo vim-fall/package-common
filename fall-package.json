@@ -36,18 +36,8 @@
       }
     },
     "source": {
-      "file": {
-        "url": "./sources/file.ts",
-        "options": {
-          "excludes": [
-            "/.git/",
-            "/node_modules/",
-            "/target/",
-            "/.DS_Store",
-            "/Desktop.ini",
-            "/Thumbs.db"
-          ]
-        }
+      "line": {
+        "url": "./sources/line.ts"
       }
     }
   }
