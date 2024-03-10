@@ -3,7 +3,7 @@
   "extension": {
     "action": {
       "quickfix": {
-        "url": "./actions/quickfix.ts",
+        "url": "./action/quickfix.ts",
         "variants": {
           "add": {
             "action": "a"
@@ -27,7 +27,7 @@
     },
     "processor": {
       "lexical_sorter": {
-        "url": "./processors/lexical_sorter.ts",
+        "url": "./processor/lexical_sorter.ts",
         "variants": {
           "reverse": {
             "reverse": true
@@ -37,7 +37,7 @@
     },
     "source": {
       "line": {
-        "url": "./sources/line.ts"
+        "url": "./source/line.ts"
       }
     }
   }
