@@ -1,3 +1,25 @@
+/**
+ * Quickfix action sends the selected items, the processed items, or the cursor item to the quickfix list.
+ *
+ * The following options are available:
+ *
+ * - `what` (optional): An object that contains the context of the action. It can contain the following properties:
+ *   - `context`: The context of the action.
+ *   - `id`: The ID of the action.
+ *   - `idx`: The index of the action.
+ *   - `nr`: The number of the action.
+ *   - `title`: The title of the action.
+ *  - `action` (optional): The action to perform. It can be one of the following:
+ *    - `a`: Append the items to the quickfix list.
+ *    - `r`: Replace the items in the quickfix list.
+ *    - `f`: Open the quickfix list and replace the items.
+ *    - ` `: Open the quickfix list and append the items.
+ *  - `target` (optional): The target of the action. It can be one of the following:
+ *    - `selected-or-cursor`: Use the selected items if available, otherwise use the cursor item.
+ *    - `selected-or-processed`: Use the selected items if available, otherwise use the processed items.
+ *
+ * @module
+ */
 import type { Action } from "https://deno.land/x/fall_core@v0.3.0/mod.ts";
 import * as fn from "https://deno.land/x/denops_std@v6.3.0/function/mod.ts";
 import { assert, is } from "https://deno.land/x/unknownutil@v3.16.3/mod.ts";
