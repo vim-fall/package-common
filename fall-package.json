@@ -1,5 +1,5 @@
 {
-  "$schema": "https://vim-fall.github.io/jsonschema/v1/package.schema.json",
+  "$schema": "https://vim-fall.github.io/jsonschema/v1alpha/package.schema.json",
   "action": {
     "quickfix": {
       "url": "./action/quickfix.ts",
@@ -24,9 +24,9 @@
       }
     }
   },
-  "processor": {
-    "lexical_sorter": {
-      "url": "./processor/lexical_sorter.ts",
+  "sorter": {
+    "lexical": {
+      "url": "./sorter/lexical.ts",
       "variants": {
         "reverse": {
           "reverse": true
